@@ -1,5 +1,7 @@
 # BlablaOS
 This is a hacking distro based on Arch Linux (WSL). 
+
+
 Warning! The developer will not be held responsible for anything the user does with this distro.
 
 Tutorial: if you dont see like this "{Architect} Type blabla to seize control.
