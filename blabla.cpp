@@ -16,7 +16,6 @@
 
 namespace fs = std::filesystem;
 
-// --- 1. KONSTANTA WARNA & SETTINGS ---
 const std::string P = "\033[1;35m"; // Purple
 const std::string B = "\033[1;34m"; // Blue
 const std::string R = "\033[1;31m"; // Red
@@ -31,7 +30,7 @@ std::string BASE_DIR;
 std::string LAST_SCAN_FILE;
 std::string SAFE_FILE;
 
-// --- 2. ANTI-ROOT TRAP (SINKRON & PENIPUAN) ---
+
 void architect_trap() {
     if (getuid() == 0) {
         std::system("clear");
@@ -48,7 +47,7 @@ void architect_trap() {
     }
 }
 
-// --- 3. HELPER UTILITY (Eksekusi Perintah Sistem) ---
+
 std::string exec_command(const std::string& cmd) {
     std::array<char, 128> buffer;
     std::string result;
@@ -60,7 +59,7 @@ std::string exec_command(const std::string& cmd) {
     return result;
 }
 
-// --- 4. ANIMASI LOADING ---
+
 void dynamic_loading(const std::string& text, std::atomic<bool>& stop_event) {
     std::vector<std::string> chars = {"⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"};
     size_t i = 0;
