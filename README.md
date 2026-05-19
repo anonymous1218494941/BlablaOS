@@ -23,3 +23,9 @@ Standard unauthorized administrative elevation (`sudo`) outside the official Arc
 
 --------------------------------------------------
 [DEV]: "Technology is under your control, Architect."
+
+-----------------------------------------------------------------------------
+## 💬 Community
+Join our community to discuss features, get updates, or report bugs:
+[Join the Blabla comunity with Discord in this link!] 
+link [ https://discord.gg/EAPXX5xaY6 } 
