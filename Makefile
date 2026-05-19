@@ -1,0 +1,34 @@
+MAKEFLAGS += --no-print-directory --silent
+ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+SRC := $(ROOT_DIR)/blabla.cpp
+BIN := /usr/local/bin/blabla
+
+all:
+	@if [ -f $(BIN) ]; then \
+		$(BIN) all; \
+	else \
+		echo "\033[1;31m[!] Error: Tool belum diinstal. Jalankan 'sudo make install' terlebih dahulu.\033[0m"; \
+	fi
+
+install:
+	@echo "\033[1;34m[*] Compiling blabla.cpp dengan standar C++17...\033[0m"
+	@g++ -std=c++17 -pthread -o $(ROOT_DIR)/blabla $(SRC)
+	@echo "\033[1;34m[*] Mendaftarkan aplikasi ke biner sistem global...\033[0m"
+	@sudo mv $(ROOT_DIR)/blabla $(BIN)
+	
+	@echo "\033[1;34m[*] Mengonfigurasi lingkungan ~/.bashrc...\033[0m"
+	@sed -i '/alias readme=/d' ~/.bashrc
+	@sed -i '/{Architect}/d' ~/.bashrc
+	@sed -i '/{AI}/d' ~/.bashrc
+	@echo "alias readme='nano ~/README.md'" >> ~/.bashrc
+	@echo 'echo -e "\033[1;31m{Architect}\033[0m \033[1;37mType \033[1;32mblabla\033[0m \033[1;37mto seize control.\033[0m"' >> ~/.bashrc
+	@echo 'echo -e "\033[1;37m{AI} \033[1;31m[README!]\033[0m \033[1;37mFound Cyber Security Foundation. Type \033[1;32mreadme\033[0m \033[1;37mto read.\033[0m"' >> ~/.bashrc
+	
+	@echo "\033[1;32m[+] DEPLOYMENT SUCCESSFUL. type: source ~/.bashrc\033[0m"
+
+%:
+	@if [ -f $(BIN) ]; then \
+		$(BIN) $@; \
+	else \
+		echo "\033[1;31m[!] Error: the tools not instals. run 'sudo make install' .\033[0m"; \
+	fi
