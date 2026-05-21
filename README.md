@@ -20,12 +20,10 @@ Provides low-level system maintenance and resource optimization:
 
 ## ⚠️ SYSTEM INTEGRITY TRAP
 Standard unauthorized administrative elevation (`sudo`) outside the official Architect runtime parameters will trigger an automated database lock. Always interact using the standard binary hooks.
-
---------------------------------------------------
-[DEV]: "Technology is under your control, Architect."
-
 -----------------------------------------------------------------------------
 ## 💬 Community
 Join our community to discuss features, get updates, or report bugs:
 [Join the Blabla comunity with Discord in this link!] 
 link [ https://discord.gg/EAPXX5xaY6 } 
+
+
