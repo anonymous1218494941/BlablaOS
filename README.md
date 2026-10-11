@@ -15,17 +15,11 @@ Provides low-level system maintenance and resource optimization:
 *   **Ghost Mode:** Destroys telemetry logs inside `/var/log` to preserve operational anonymity.
 *   **Network Ultra-Boost:** Dynamically scales the kernel netdev maximum backlog to 5000 streams.
 ---------------------------------------------------------------------------------------------------
-## ⚠️ SYSTEM INTEGRITY TRAP
-Standard unauthorized administrative elevation (`sudo`) outside the official Architect runtime parameters will trigger an automated database lock. Always interact using the standard binary hooks.
------------------------------------------------------------------------------
 ## 💬 Community
 Join our community to discuss features, get updates, or report bugs:
 [Join the Blabla comunity with Discord in this link!] 
 link [ https://discord.gg/EAPXX5xaY6 } 
 -------------------------------------------------------------------------------------
-## 🎫🎫 Investment and caloboration business
-If you're an IT professional in the cyber field, or someone else involved in work, and see the potential of this OS, let's work together. You can invest in me, and you have the right to request that I create a version of BlablaOS, for example, "Blabla OS Version for tasking," and so on.
----------------------------------------------------------------------------------------------------------------------------
 ## 👓🖼️ Documentation 
 <img width="1919" height="1079" alt="Screenshot 2026-05-21 205035" src="https://github.com/user-attachments/assets/f5d779cf-e910-443e-9f6d-d0ad0e9e9f7d" />
 <img width="1919" height="391" alt="Screenshot 2026-05-21 205103" src="https://github.com/user-attachments/assets/f72e5072-811a-45d7-835d-2eea67a2a594" />
